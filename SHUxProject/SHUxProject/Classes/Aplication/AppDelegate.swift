@@ -15,8 +15,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        
+        //MARK:设置根视图控制器
+        setupRootViewController()
+        
         return true
+    }
+    
+    func setupRootViewController() {
+        
+        window = UIWindow(frame: SCREEN_BOUNDS)
+        window?.backgroundColor = COLOR_NAV_BG
+        
+        //        let token = UserDefaults.standard.value(forKey: "token_id")
+        //        switch token {
+        //        case nil:
+        //            let login = SHloginViewController()
+        //            let nav = SHMainNavigationController.init(rootViewController: login)
+        //            window?.rootViewController = nav
+        //
+        //        default:
+        //           // let home = SHHomeViewController()
+        //            //let nav = SHMainNavigationController.init(rootViewController: home)
+        //            let tabber = SHMainTabBarController()
+        //            window?.rootViewController = tabber
+        //
+        //        }
+        let tabber = SHMainTabBarController()
+        window?.rootViewController = tabber
+        window?.makeKeyAndVisible()
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
