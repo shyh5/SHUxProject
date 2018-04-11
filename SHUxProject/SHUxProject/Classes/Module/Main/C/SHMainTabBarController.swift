@@ -26,7 +26,6 @@ class SHMainTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-    
     fileprivate func prepareVc() {
         
         let essenceVc = SHHomeViewController()
@@ -36,7 +35,7 @@ class SHMainTabBarController: UITabBarController {
         configChildViewController(newVc, title: "自定义", imageName: "tabbar_grammar_icon_normal", selectedImageName: "tabbar_grammar_icon_selected")
         
         let friendTrendsVc = SHChooseViewController()
-        configChildViewController(friendTrendsVc, title: "选择", imageName: "tabbar_trends_icon_normal", selectedImageName: "tabbar_trends_icon_selected")
+        configChildViewController(friendTrendsVc, title: "豆瓣", imageName: "tabbar_trends_icon_normal", selectedImageName: "tabbar_trends_icon_selected")
 //
 //        let profileVc = SHHomeViewController()
 //        configChildViewController(profileVc, title: "我的", imageName: "tab_profile_icon_normal", selectedImageName: "tab_profile_icon_selected")
@@ -45,7 +44,6 @@ class SHMainTabBarController: UITabBarController {
         selectedIndex = 0
     }
 
-    
     /**
      配置TabBarController的子控制器
      

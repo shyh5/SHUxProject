@@ -26,6 +26,10 @@
 		B0FC6FA42079FADB00201352 /* SHCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC6FA02079FADB00201352 /* SHCustomViewController.swift */; };
 		B0FC6FA52079FADB00201352 /* SHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC6FA12079FADB00201352 /* SHHomeViewController.swift */; };
 		B0FC6FA7207A041B00201352 /* SHSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC6FA6207A041B00201352 /* SHSliderView.swift */; };
+		B0FC6FAD207B0D4600201352 /* SHDoubanTop250ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC6FAC207B0D4600201352 /* SHDoubanTop250ViewController.swift */; };
+		B0FC6FB1207B0E6A00201352 /* SHBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC6FB0207B0E6A00201352 /* SHBaseTableViewCell.swift */; };
+		B0FC6FB3207B0E9100201352 /* SHBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC6FB2207B0E9100201352 /* SHBaseCollectionViewCell.swift */; };
+		B0FC6FB5207B4A5D00201352 /* SHDoubanHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC6FB4207B4A5D00201352 /* SHDoubanHeadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		B0FC6FA02079FADB00201352 /* SHCustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHCustomViewController.swift; sourceTree = "<group>"; };
 		B0FC6FA12079FADB00201352 /* SHHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHHomeViewController.swift; sourceTree = "<group>"; };
 		B0FC6FA6207A041B00201352 /* SHSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHSliderView.swift; sourceTree = "<group>"; };
+		B0FC6FAC207B0D4600201352 /* SHDoubanTop250ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHDoubanTop250ViewController.swift; sourceTree = "<group>"; };
+		B0FC6FB0207B0E6A00201352 /* SHBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHBaseTableViewCell.swift; sourceTree = "<group>"; };
+		B0FC6FB2207B0E9100201352 /* SHBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		B0FC6FB4207B4A5D00201352 /* SHDoubanHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHDoubanHeadView.swift; sourceTree = "<group>"; };
 		DD659B27015CBD84F8D034D9 /* Pods_SHUxProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHUxProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +176,7 @@
 		B0FC6F742079F64900201352 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				B0FC6FA8207B0D2700201352 /* Douban */,
 				B0FC6F9E2079FADB00201352 /* C */,
 				B0FC6FA22079FADB00201352 /* V */,
 			);
@@ -225,6 +234,41 @@
 			isa = PBXGroup;
 			children = (
 				B0FC6FA6207A041B00201352 /* SHSliderView.swift */,
+				B0FC6FB0207B0E6A00201352 /* SHBaseTableViewCell.swift */,
+				B0FC6FB2207B0E9100201352 /* SHBaseCollectionViewCell.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		B0FC6FA8207B0D2700201352 /* Douban */ = {
+			isa = PBXGroup;
+			children = (
+				B0FC6FA9207B0D2700201352 /* M */,
+				B0FC6FAA207B0D2700201352 /* C */,
+				B0FC6FAB207B0D2700201352 /* V */,
+			);
+			path = Douban;
+			sourceTree = "<group>";
+		};
+		B0FC6FA9207B0D2700201352 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		B0FC6FAA207B0D2700201352 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				B0FC6FAC207B0D4600201352 /* SHDoubanTop250ViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		B0FC6FAB207B0D2700201352 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				B0FC6FB4207B4A5D00201352 /* SHDoubanHeadView.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -324,14 +368,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SHUxProject/Pods-SHUxProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,9 +398,11 @@
 			files = (
 				B0FC6FA42079FADB00201352 /* SHCustomViewController.swift in Sources */,
 				B0FC6F932079F64900201352 /* UIViewExtension.swift in Sources */,
+				B0FC6FAD207B0D4600201352 /* SHDoubanTop250ViewController.swift in Sources */,
 				B0FC6F882079F64900201352 /* SHAdvViewController.swift in Sources */,
 				B0FC6FA32079FADB00201352 /* SHChooseViewController.swift in Sources */,
 				B0FC6F892079F64900201352 /* SHAdvertView.swift in Sources */,
+				B0FC6FB1207B0E6A00201352 /* SHBaseTableViewCell.swift in Sources */,
 				B0FC6F952079F64900201352 /* UIColor_SHExtension.swift in Sources */,
 				B0FC6F8A2079F64900201352 /* SHTabBar.swift in Sources */,
 				B0FC6F922079F64900201352 /* SHStringExtension.swift in Sources */,
@@ -358,6 +410,8 @@
 				B0FC6F912079F64900201352 /* SHGlobalGonfig.swift in Sources */,
 				B0FC6FA7207A041B00201352 /* SHSliderView.swift in Sources */,
 				B0FC6FA52079FADB00201352 /* SHHomeViewController.swift in Sources */,
+				B0FC6FB5207B4A5D00201352 /* SHDoubanHeadView.swift in Sources */,
+				B0FC6FB3207B0E9100201352 /* SHBaseCollectionViewCell.swift in Sources */,
 				B0FC6F942079F64900201352 /* UIBarButtionItem.swift in Sources */,
 				B0FC6F862079F64900201352 /* SHMainNavigationController.swift in Sources */,
 				B0FC6F872079F64900201352 /* SHMainTabBarController.swift in Sources */,

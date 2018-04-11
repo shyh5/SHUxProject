@@ -10,6 +10,13 @@ import UIKit
 
 class SHSliderView: UIView {
     
+    public var score : CGFloat = 10.0 {
+        didSet{
+            let newScor = score / 10.0 * self.bounds.size.width
+            self.reloadViewWithThumbCeneterX(newScor)
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadUI()
@@ -31,7 +38,6 @@ class SHSliderView: UIView {
         tapView.addSubview(backView)
         tapView.addSubview(trackView)
         self.addSubview(thumb)
-        
         
         
         

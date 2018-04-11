@@ -14,6 +14,7 @@ class SHHomeViewController: UIViewController {
         super.viewDidLoad()
         
         let slider = SHSliderView.init(frame: CGRect.init(x: 10, y: 100, width: 300, height: 75))
+        
         view.addSubview(slider)
         
     }

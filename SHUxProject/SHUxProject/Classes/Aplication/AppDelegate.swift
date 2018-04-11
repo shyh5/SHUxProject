@@ -43,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //
         //        }
         let tabber = SHMainTabBarController()
+//        let nav = SHMainNavigationController.init(rootViewController:SHChooseViewController())
         window?.rootViewController = tabber
         window?.makeKeyAndVisible()
         
