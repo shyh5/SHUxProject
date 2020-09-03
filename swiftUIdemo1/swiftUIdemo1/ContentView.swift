@@ -29,47 +29,6 @@ struct ContentView: View {
     @State private var brian : CalculatorBrain = .left("1")
     var body: some View {
         //modifier 修饰
-//        HStack {
-//            CustomBtn(
-//            foregroundColor: .white,
-//            bacgroundColor: .blue,
-//            title: "1",
-//            size: CGSize(width: 88, height: 88))
-//            {
-//                print("click one")
-//            }
-//
-//            CustomBtn(
-//            foregroundColor: .white,
-//            bacgroundColor: .blue,
-//            title: "2",
-//            size: CGSize(width: 88, height: 88))
-//            {
-//                print("click two")
-//            }
-//
-//            CustomBtn(
-//            foregroundColor: .white,
-//            bacgroundColor: .blue,
-//            title: "3",
-//            size: CGSize(width: 88, height: 88))
-//            {
-//                print("click three")
-//            }
-//        }
-        
-//        HStack {
-//            ForEach(row,id: \.self) {
-//                CustomBtn(
-//                bacgroundColorName:$0.bacgroundColorName ,
-//                title: $0.title,
-//                size: $0.size)
-//                {
-//
-//                }
-//            }
-//
-//        }
         
         //计算栏
         VStack(spacing:12) {
